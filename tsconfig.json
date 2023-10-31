@@ -1,0 +1,15 @@
+{
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "**/*.spec.ts"],
+  "compilerOptions": {
+    "target": "ES2015",
+    "module": "esnext",
+    "lib": ["dom", "esnext"],
+    "esModuleInterop": true,
+    "strict": true,
+    "declaration": true,
+    "declarationDir": "./",
+    "moduleResolution": "node",
+    "noEmit": true
+  }
+}
