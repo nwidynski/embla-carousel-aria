@@ -34,7 +34,7 @@ npm install --save embla-carousel-aria  # yarn add embla-carousel-aria
 
 ```js
 import EmblaCarousel from 'embla-carousel';
-import { AriaPlugin } from 'embla-carousel-aria';
+import AriaPlugin from 'embla-carousel-aria';
 
 // initialize Embla Carousel
 const embla = EmblaCarousel(
@@ -50,7 +50,7 @@ const embla = EmblaCarousel(
 
 ```js
 import { useEmblaCarousel } from 'embla-carousel-react';
-import { AriaPlugin } from 'embla-carousel-aria';
+import AriaPlugin from 'embla-carousel-aria';
 
 const EmblaCarouselComponent = ({ children }) => {
   const [emblaRef, embla] = useEmblaCarousel(
