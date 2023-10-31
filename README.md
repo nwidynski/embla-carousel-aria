@@ -15,7 +15,7 @@
   
   <img alt="NPM" src="https://img.shields.io/npm/l/embla-carousel-aria">
   
-  <a href="https://bundlephobia.com/result?p=embla-carousel-aria@8.0.0-rc14" target="_blank">
+  <a href="https://bundlephobia.com/result?p=embla-carousel-aria@latest" target="_blank">
     <img
       src="https://img.shields.io/bundlephobia/minzip/embla-carousel-aria?color=%234c1&label=gzip%20size"
     />
