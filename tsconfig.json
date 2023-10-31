@@ -10,6 +10,7 @@
     "declaration": true,
     "declarationDir": "./",
     "moduleResolution": "node",
-    "noEmit": true
+    "noEmit": true,
+    "resolveJsonModule": true
   }
 }

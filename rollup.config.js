@@ -6,6 +6,7 @@ import babel from '@rollup/plugin-babel';
 import typescript from 'rollup-plugin-typescript2';
 import resolve from '@rollup/plugin-node-resolve';
 import { terser } from 'rollup-plugin-terser';
+import json from '@rollup/plugin-json';
 
 const kebabToPascalCase = (string = '') =>
   string.replace(/(^\w|-\w)/g, (replaceString) =>
@@ -79,6 +80,11 @@ export default [
       },
     ],
     external: Object.keys(CONFIG_GLOBALS),
-    plugins: [resolve(), typescript(CONFIG_TYPESCRIPT), babel(CONFIG_BABEL)],
+    plugins: [
+      resolve(),
+      typescript(CONFIG_TYPESCRIPT),
+      babel(CONFIG_BABEL),
+      json(),
+    ],
   },
 ];

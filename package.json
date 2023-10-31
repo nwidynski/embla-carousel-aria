@@ -1,6 +1,6 @@
 {
   "name": "embla-carousel-aria",
-  "version": "8.0.0-rc14",
+  "version": "8.0.0-rc16",
   "author": "Nikolas Schröter",
   "description": "An accessibility plugin for Embla Carousel",
   "repository": {
@@ -25,15 +25,14 @@
     "vue",
     "svelte"
   ],
-  "main": "embla-carousel-arias.umd.js",
-  "unpkg": "embla-carousel-aria.umd.js",
-  "module": "embla-carousel-aria.esm.js",
-  "types": "index.d.ts",
+  "main": "dist/embla-carousel-arias.umd.js",
+  "unpkg": "dist/embla-carousel-aria.umd.js",
+  "module": "dist/embla-carousel-aria.esm.js",
+  "types": "dist/index.d.ts",
   "sideEffects": false,
   "files": [
-    "embla-carousel-aria*",
-    "components/**/*",
-    "index.d.ts"
+    "dist",
+    "src"
   ],
   "scripts": {
     "test": "echo \"Info: no tests specified\" && exit 0",
@@ -44,6 +43,7 @@
   "devDependencies": {
     "@babel/core": "7.17.0",
     "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-json": "^6.0.1",
     "@rollup/plugin-node-resolve": "13.1.3",
     "@types/jest": "^27.4.0",
     "@types/react": "^18.2.33",
