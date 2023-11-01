@@ -6,7 +6,7 @@ import { CreateOptionsType } from 'embla-carousel/components/Options';
 export type AriaOptions = CreateOptionsType<{
   locale?: string | undefined;
   debounce?: number | undefined;
-  live?: false | 'off' | 'assertive' | 'polite' | undefined;
+  live?: boolean | 'off' | 'assertive' | 'polite' | undefined;
 
   onFocusChange?: (e: HTMLElement, target: HTMLElement) => void;
 }>;

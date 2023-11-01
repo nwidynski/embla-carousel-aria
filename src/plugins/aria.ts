@@ -57,12 +57,18 @@ export const AriaPlugin: AriaPluginFunction = (
     const root = emblaApi.rootNode();
 
     const ariaRoleDesc = intl.format('roledescription');
-    const ariaLive = typeof options.live === 'boolean' ? 'off' : options.live;
 
     const ariaOrientation =
       emblaApi.internalEngine().axis.scroll === 'x' ? 'horizontal' : 'vertical';
     const ariaMultiselectable =
       emblaApi.slidesInView().length > 1 ? 'true' : 'false';
+
+    const ariaLive =
+      typeof options.live === 'boolean'
+        ? options.live
+          ? 'polite'
+          : 'off'
+        : options.live;
 
     safelyMountNodeAttr(root, 'role', 'tablist');
     safelyMountNodeAttr(root, 'aria-live', ariaLive);
