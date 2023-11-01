@@ -75,7 +75,7 @@ Locale to be used in IETF's BCP 47 format.
 
 ### live
 
-**Type**: boolean<br/>
+**Type**: false | "off" | "polite" | "assertive"<br/>
 **Default**: false
 
 Whether the screen reader should announce slide changes. Recommended to be turned off if autoscroll is used.

@@ -1,6 +1,6 @@
 {
   "name": "embla-carousel-aria",
-  "version": "8.0.0-rc16",
+  "version": "8.0.0-rc17",
   "author": "Nikolas Schröter",
   "description": "An accessibility plugin for Embla Carousel",
   "repository": {
@@ -32,7 +32,6 @@
   "sideEffects": false,
   "files": [
     "dist",
-    "src",
     "LICENSE"
   ],
   "scripts": {

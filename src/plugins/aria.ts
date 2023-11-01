@@ -56,8 +56,9 @@ export const AriaPlugin: AriaPluginFunction = (
 
     const root = emblaApi.rootNode();
 
-    const ariaLive = `${options.live}`;
     const ariaRoleDesc = intl.format('roledescription');
+    const ariaLive = typeof options.live === 'boolean' ? 'off' : options.live;
+
     const ariaOrientation =
       emblaApi.internalEngine().axis.scroll === 'x' ? 'horizontal' : 'vertical';
     const ariaMultiselectable =
