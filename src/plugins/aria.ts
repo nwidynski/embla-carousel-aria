@@ -258,7 +258,7 @@ export const AriaPlugin: AriaPluginFunction = (
       const visible = emblaApi.slidesInView().includes(index);
       const localizedRoleDesc = intl.format('slide.roledescription');
 
-      safelyMountNodeAttr(node, 'role', 'tab');
+      safelyMountNodeAttr(node, 'role', 'tabpanel');
       safelyMountNodeAttr(node, 'aria-label', localizedLabel);
       safelyMountNodeAttr(node, 'aria-roledescription', localizedRoleDesc);
       safelyMountNodeAttr(node, 'aria-hidden', visible ? 'false' : 'true');
