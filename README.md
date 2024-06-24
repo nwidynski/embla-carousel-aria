@@ -40,7 +40,7 @@ import AriaPlugin from 'embla-carousel-aria';
 const embla = EmblaCarousel(
   emblaNode,
   {
-    inViewThreshold: 0.25, // A high view threshold is recommended.
+    inViewThreshold: 0.25, // Note: Your slide must be in view for it to be tabbable! A high view threshold is recommended.
   },
   [AriaPlugin()]
 );
@@ -55,7 +55,7 @@ import AriaPlugin from 'embla-carousel-aria';
 const EmblaCarouselComponent = ({ children }) => {
   const [emblaRef, embla] = useEmblaCarousel(
     {
-      inViewThreshold: 0.25, // A high view threshold is recommended.
+      inViewThreshold: 0.25, // Note: Your slide must be in view for it to be tabbable! A high view threshold is recommended.
     },
     [AriaPlugin()]
   );
